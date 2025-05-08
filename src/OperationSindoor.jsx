@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import patrioticMusic from "./assets/patriotic-music.mp3"; // adjust path if needed
 import indianFlagGif from "./assets/indian-flag.gif"; // adjust path if needed
+import operationImg from "./assets/operationImg.png"; // adjust path if needed
 
 const slogans = [
   "🇮🇳 This is just a trailer, the full movie starts when you cross the line! 🇮🇳",
@@ -21,10 +22,13 @@ export default function OperationSindoor() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-orange-200 to-white text-center px-4">
-      <h1 className="text-5xl font-bold text-red-600 animate-pulse mb-4">
-        🔥 Operation Sindoor 🔥
-      </h1>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-orange-600 to-white text-center px-4">
+
+      <img
+        src={operationImg}
+       alt="Operation Sindoor Logo"
+        className="mb-6 w-auto h-50 object-contain animate-pulse"
+      />
 
       <img
         src={indianFlagGif}
